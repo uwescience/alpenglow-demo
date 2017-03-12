@@ -7,14 +7,14 @@
 
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
-    pathToImages = "/alpenglow-demo/prostate/png"; // This is the path relative to the FPBioimage parent folder
+    pathToImages = "../prostate/png"; // This is the path relative to the FPBioimage parent folder
     uniqueName = "prostate"; // Give this image stack a unique name for bookmarking to work correctly
     numberOfImages = 241;  // Number of images in the stack
     imagePrefix = "im_";  // The prefix of the image stack file names
     numberingFormat = "000000";  // eg. "000" for 000, 001, 002, 003 etc.
     voxelSize = [1,1,1]; // This needs to be a ratio of x:y:z voxel size.
 
-    pathToFPBioimage = "/alpenglow-demo/FPBioimage"; // The path to the FPBioimage folder from this webpage
+    pathToFPBioimage = "../FPBioimage/"; // The path to the FPBioimage folder from this webpage
 
     // optional parameters
     intensity = 1;
@@ -102,8 +102,8 @@ var s = document.createElement("script");
 
 <!-- Load the FPBioimage viewer -->
 <div id="scriptLoader">
-<script src="/alpenglow-demo/FPBioimage/FPBioimageLoader.js"></script>
-<script src="/alpenglow-demo/FPBioimage/FPBioimage.js"></script>
+<script src="../FPBioimage/FPBioimageLoader.js"></script>
+<script src="../FPBioimage/FPBioimage.js"></script>
 </div>
 </body>
 </html>
