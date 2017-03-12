@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Person Bioimage Example - Hydrogenic Wavefunction</title>
+  <title>Prostate</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
   <!-- EDIT THIS JAVASCRIPT! -->
   <script type='text/javascript'>
-    pathToImages = "./biopsy"; // This is the path relative to the FPBioimage parent folder
+    pathToImages = "prostate"; // This is the path relative to the FPBioimage parent folder
     uniqueName = "biopsy"; // Give this image stack a unique name for bookmarking to work correctly
-    numberOfImages = 128;  // Number of images in the stack
+    numberOfImages = 241;  // Number of images in the stack
     imagePrefix = "im_";  // The prefix of the image stack file names
     numberingFormat = "000000";  // eg. "000" for 000, 001, 002, 003 etc.
     voxelSize = [1,1,1]; // This needs to be a ratio of x:y:z voxel size.
 
-    pathToFPBioimage = "./FPBioimage"; // The path to the FPBioimage folder from this webpage
+    pathToFPBioimage = "FPBioimage"; // The path to the FPBioimage folder from this webpage
 
     // optional parameters
     intensity = 1;
@@ -22,7 +22,7 @@
   <!-- END OF REQUIRED EDITS -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../resources/w3.css">
+  <link rel="stylesheet" href="resources/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <style>
   html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
@@ -72,8 +72,8 @@ var s = document.createElement("script");
   <!-- Full screen button -->
   <div class="w3-container w3-center" style="padding:0px">
     <table><tr>
-      <td style="vertical-align:middle; text-align:left"><h4>Images generated XXX. </h4></td>
-      <td style="vertical-align:middle; text-align:right"><img src="../resources/fullscreen.png" height="40px" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></td>
+      <td style="vertical-align:middle; text-align:left"><h4>Images generated using light sheet microscopy. </h4></td>
+      <td style="vertical-align:middle; text-align:right"><img src="resources/fullscreen.png" height="40px" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></td>
     </tr></table>
   </div>
 
@@ -81,7 +81,7 @@ var s = document.createElement("script");
   <div class="w3-row">
     <div class="w3-col l6 m6 w3-light-grey w3-padding-large" style="min-height:200px">
       <h3>About the Images</h3>
-      <p> 3D 2p-orbital wavefunction. </p>
+      <p> Images depict a 3D visualization   </p>
     </div>
 
     <div class="w3-col l6 m6 w3-grey w3-padding-large" style="min-height:200px">
@@ -102,7 +102,6 @@ var s = document.createElement("script");
 
 <!-- Load the FPBioimage viewer -->
 <div id="scriptLoader"> </div>
-<script src="./FPBioimage/FPBioimageLoader.js"></script>
-
+<script src="FPBioimage/FPBioimageLoader.js"></script>
 </body>
 </html>
